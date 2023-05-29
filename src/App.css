@@ -38,19 +38,19 @@ nav ul li a:hover {
 }
 
 /* Header Styles */
-header {
+.header {
   background-image: linear-gradient(to bottom, #000000, #333333);
   padding: 10px;
   text-align: center;
   color: #fff;
 }
 
-h1 {
+.title {
   font-size: 20px;
   margin-bottom: 5px;
 }
 
-p {
+.subtitle {
   font-size: 14px;
   margin-bottom: 10px;
 }
@@ -72,33 +72,150 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Features Section Styles */
-.features-section {
-  padding: 20px;
+/* Footer Styles */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
   text-align: center;
 }
 
-.features-shape {
+.footer p {
+  color: #fff;
+  font-size: 14px;
+}
+
+/* Landing Page Styles */
+.features-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
 }
 
-.feature-item {
-  width: 200px;
+.features-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-section li {
+  display: flex;
+  align-items: center;
+  margin: 10px;
   padding: 10px;
-  background-color: #f5f5f5;
+  background-color: #f2f2f2;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.feature-title {
-  font-size: 16px;
+.features-section li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Individual Feature Page Styles */
+.feature-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.feature-page h2 {
+  font-size: 24px;
   margin-bottom: 10px;
 }
 
-.feature-description {
-  font-size: 14px;
+.feature-page p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* About Page Styles */
+.about-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-page h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-page p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Contact Page Styles */
+.contact-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-page h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-page p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Signup Page Styles */
+.signup-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.signup-page h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.signup-page p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.signup-form input {
+  padding: 6px 12px;
+  margin-bottom: 10px;
+}
+
+.signup-form button {
+  padding: 6px 12px;
+  background-color: #ff9800;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #e65100;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

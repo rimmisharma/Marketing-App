@@ -5,6 +5,17 @@ import './App.css';
 import AboutPage from './AboutPage';
 import ContactPage from './ContactPage';
 import SignupPage from './SignupPage';
+import Feature1Page from './Feature1Page';
+import Feature2Page from './Feature2Page';
+import Feature3Page from './Feature3Page';
+import Feature4Page from './Feature4Page';
+import Feature5Page from './Feature5Page';
+import Feature6Page from './Feature6Page';
+import Feature7Page from './Feature7Page';
+import Feature8Page from './Feature8Page';
+import Feature9Page from './Feature9Page';
+import Feature10Page from './Feature10Page';
+// Import other feature pages here
 
 const LandingPage = () => {
   return (
@@ -26,51 +37,33 @@ const LandingPage = () => {
         <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />
         <Route path="/signup" component={SignupPage} />
+        <Route path="/feature1" component={Feature1Page} />
+        <Route path="/feature2" component={Feature2Page} />
+        <Route path="/feature3" component={Feature3Page} />
+        <Route path="/feature4" component={Feature4Page} />
+        <Route path="/feature5" component={Feature5Page} />
+        <Route path="/feature6" component={Feature6Page} />
+        <Route path="/feature7" component={Feature7Page} />
+        <Route path="/feature8" component={Feature8Page} />
+        <Route path="/feature9" component={Feature9Page} />
+        <Route path="/feature10" component={Feature10Page} />
+        {/* Add other feature routes here */}
         <Route path="/" exact>
           <section id="features" className="features-section">
             <h2>Features</h2>
-            <div className="features-shape">
-              <div className="feature-item">
-                <h3 className="feature-title">24/7 Surveillance</h3>
-                <p className="feature-description">Stay connected and monitor your home or property from anywhere at any time using the AlectoWatch mobile app.</p>
-              </div>
-              <div className="feature-item">
-                <h3 className="feature-title">Intelligent Intrusion Detection</h3>
-                <p className="feature-description">AlectoWatch utilizes AI algorithms to intelligently differentiate between normal movements and potential threats, reducing false alarms and providing accurate detection and sending instant smart alerts to your smartphone if it detects any breach in your security system.</p>
-              </div>
-              <div className="feature-item">
-                <h3 className="feature-title">Night Vision</h3>
-                <p className="feature-description">See clearly even in low-light or dark environments with AlectoWatch's advanced night vision capabilities and communicate in real-time with anyone near the AlectoWatch cameras using the built-in two-way audio feature.</p>
-              </div>
-              <div className="feature-item">
-                <h3 className="feature-title">Smart Home Integration</h3>
-                <p className="feature-description">Seamlessly integrate AlectoWatch with other smart home devices, such as smart locks or lighting systems, for enhanced security and automation.</p>
-              </div>
-              <div className="feature-item">
-                <h3 className="feature-title">Cloud Storage</h3>
-                <p className="feature-description">Safely store and access recorded video footage in the cloud, providing an extra layer of backup and security.</p>
-              </div>
-              <div className="feature-item">
-                <h3 className="feature-title">Multi-User Access</h3>
-                <p className="feature-description">Share access to your AlectoWatch system with trusted family members or friends, allowing them to monitor and control security settings.</p>
-              </div>
-              <div className="feature-item">
-                <h3 className="feature-title">Facial Recognition</h3>
-                <p className="feature-description">The AlectoWatch system employs facial recognition technology to identify familiar faces and send customized notifications when recognized individuals are detected.</p>
-              </div>
-              <div className="feature-item">
-                <h3 className="feature-title">Smart Monitoring Zones</h3>
-                <p className="feature-description">By utilizing AI-based zoning, AlectoWatch enables you to define specific areas within your property for enhanced monitoring, triggering alerts and recording activities in those zones.</p>
-              </div>
-              <div className="feature-item">
-                <h3 className="feature-title">Adaptive Learning</h3>
-                <p className="feature-description">AlectoWatch continuously learns from user interactions and adjusts its algorithms over time to provide personalized security recommendations and improved system performance.</p>
-              </div>
-              <div className="feature-item">
-                <h3 className="feature-title">Smart Insights and Recommendations</h3>
-                <p className="feature-description">AlectoWatch's AI capabilities provide intelligent insights and recommendations based on user activity and security patterns, helping users optimize their security settings and improve overall home safety.</p>
-              </div>
-            </div>
+            <ul>
+              <li><Link to="/feature1">24/7 Surveillance</Link></li>
+              <li><Link to="/feature2">Intelligent Intrusion Detection</Link></li>
+              <li><Link to="/feature3">Night Vision</Link></li>
+              <li><Link to="/feature4">Smart Home Integration</Link></li>
+              <li><Link to="/feature5">Cloud Storage</Link></li>
+              <li><Link to="/feature6">Multi-User Access</Link></li>
+              <li><Link to="/feature7">Facial Recognition</Link></li>
+              <li><Link to="/feature8">Smart Monitoring Zones</Link></li>
+              <li><Link to="/feature9">Adaptive Learning</Link></li>
+              <li><Link to="/feature10">Smart Insights and Recommendations</Link></li>
+              {/* Add other features here */}
+            </ul>
           </section>
         </Route>
       </Switch>
