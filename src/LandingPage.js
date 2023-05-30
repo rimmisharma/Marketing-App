@@ -5,16 +5,16 @@ import './App.css';
 import AboutPage from './AboutPage';
 import ContactPage from './ContactPage';
 import SignupPage from './SignupPage';
-import Feature1Page from './Feature1Page';
-import Feature2Page from './Feature2Page';
-import Feature3Page from './Feature3Page';
-import Feature4Page from './Feature4Page';
-import Feature5Page from './Feature5Page';
-import Feature6Page from './Feature6Page';
-import Feature7Page from './Feature7Page';
-import Feature8Page from './Feature8Page';
-import Feature9Page from './Feature9Page';
-import Feature10Page from './Feature10Page';
+import Feature1Page from './FeaturePages/Feature1Page';
+import Feature2Page from './FeaturePages/Feature2Page';
+import Feature3Page from './FeaturePages/Feature3Page';
+import Feature4Page from './FeaturePages/Feature4Page';
+import Feature5Page from './FeaturePages/Feature5Page';
+import Feature6Page from './FeaturePages/Feature6Page';
+import Feature7Page from './FeaturePages/Feature7Page';
+import Feature8Page from './FeaturePages/Feature8Page';
+import Feature9Page from './FeaturePages/Feature9Page';
+import Feature10Page from './FeaturePages/Feature10Page';
 // Import other feature pages here
 
 const LandingPage = () => {
