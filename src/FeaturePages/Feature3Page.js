@@ -1,13 +1,17 @@
 import React from 'react';
 import '../App.css';
+import surveillanceImage from '../Images/Night Vision.jpg';
 
-const Feature1Page = () => {
+const Feature3Page = () => {
   return (
     <div className="feature-page">
-      <h2>Feature 3</h2>
-      <p>Content for Feature 3 goes here.</p>
+      <h2>Night Vision</h2>
+      <p>
+      Night Vision: See clearly even in low-light or dark environments with AlectoWatch's advanced night vision capabilities and communicate in real-time with anyone near the AlectoWatch cameras using the built-in two-way audio feature.
+      </p>
+      <img src={surveillanceImage} alt="Surveillance" className="feature-image" />
     </div>
   );
 };
 
-export default Feature1Page;
+export default Feature3Page;

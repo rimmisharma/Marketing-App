@@ -1,13 +1,17 @@
 import React from 'react';
 import '../App.css';
+import surveillanceImage from '../Images/Cloud Storage.jpg';
 
-const Feature1Page = () => {
+const Feature5Page = () => {
   return (
     <div className="feature-page">
-      <h2>Feature 1</h2>
-      <p>Content for Feature 1 goes here.</p>
+      <h2>Cloud Storage</h2>
+      <p>
+      Cloud Storage: Safely store and access recorded video footage in the cloud, providing an extra layer of backup and security
+      </p>
+      <img src={surveillanceImage} alt="Surveillance" className="feature-image" />
     </div>
   );
 };
 
-export default Feature1Page;
+export default Feature5Page;
