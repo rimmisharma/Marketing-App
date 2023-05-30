@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import surveillanceImage from '../Images/24-7.png';
 
-const Feature1Page = () => {
+const SurveillancePage = () => {
   return (
     <div className="feature-page">
       <h2>24/7 Surveillance</h2>
@@ -14,4 +14,4 @@ const Feature1Page = () => {
   );
 };
 
-export default Feature1Page;
+export default SurveillancePage;

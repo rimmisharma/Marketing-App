@@ -5,16 +5,16 @@ import './App.css';
 import AboutPage from './AboutPage';
 import ContactPage from './ContactPage';
 import SignupPage from './SignupPage';
-import Feature1Page from './FeaturePages/Feature1Page';
-import Feature2Page from './FeaturePages/Feature2Page';
-import Feature3Page from './FeaturePages/Feature3Page';
-import Feature4Page from './FeaturePages/Feature4Page';
-import Feature5Page from './FeaturePages/Feature5Page';
-import Feature6Page from './FeaturePages/Feature6Page';
-import Feature7Page from './FeaturePages/Feature7Page';
-import Feature8Page from './FeaturePages/Feature8Page';
-import Feature9Page from './FeaturePages/Feature9Page';
-import Feature10Page from './FeaturePages/Feature10Page';
+import Surveillance from './FeaturePages/SurveillancePage';
+import IntelligentIntrusionDetection from './FeaturePages/IntelligentIntrusionDetectionPage';
+import NightVision from './FeaturePages/NightVisionPage';
+import SmartHomeIntegration from './FeaturePages/SmartHomeIntegrationPage';
+import CloudStorage from './FeaturePages/CloudStoragePage';
+import MultiUserAccess from './FeaturePages/MultiUserAccessPage';
+import FacialRecognition from './FeaturePages/FacialRecognitionPage';
+import SmartMonitoringZones from './FeaturePages/SmartMonitoringZonesPage';
+import AdaptiveLearning from './FeaturePages/AdaptiveLearningPage';
+import SmartInsightsAndRecommendations from './FeaturePages/SmartInsightsAndRecommendationsPage';
 // Import other feature pages here
 
 const LandingPage = () => {
@@ -37,31 +37,31 @@ const LandingPage = () => {
         <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />
         <Route path="/signup" component={SignupPage} />
-        <Route path="/feature1" component={Feature1Page} />
-        <Route path="/feature2" component={Feature2Page} />
-        <Route path="/feature3" component={Feature3Page} />
-        <Route path="/feature4" component={Feature4Page} />
-        <Route path="/feature5" component={Feature5Page} />
-        <Route path="/feature6" component={Feature6Page} />
-        <Route path="/feature7" component={Feature7Page} />
-        <Route path="/feature8" component={Feature8Page} />
-        <Route path="/feature9" component={Feature9Page} />
-        <Route path="/feature10" component={Feature10Page} />
+        <Route path="/surveillance" component={Surveillance} />
+        <Route path="/IntelligentIntrusionDetection" component={IntelligentIntrusionDetection} />
+        <Route path="/NightVision" component={NightVision} />
+        <Route path="/SmartHomeIntegration" component={SmartHomeIntegration} />
+        <Route path="/CloudStorage" component={CloudStorage} />
+        <Route path="/MultiUserAccess" component={MultiUserAccess} />
+        <Route path="/FacialRecognition" component={FacialRecognition} />
+        <Route path="/SmartMonitoringZones" component={SmartMonitoringZones} />
+        <Route path="/AdaptiveLearning" component={AdaptiveLearning} />
+        <Route path="/SmartInsightsAndRecommendations" component={SmartInsightsAndRecommendations} />
         {/* Add other feature routes here */}
         <Route path="/" exact>
           <section id="features" className="features-section">
             <h2>Features</h2>
             <ul>
-              <li><Link to="/feature1">24/7 Surveillance</Link></li>
-              <li><Link to="/feature2">Intelligent Intrusion Detection</Link></li>
-              <li><Link to="/feature3">Night Vision</Link></li>
-              <li><Link to="/feature4">Smart Home Integration</Link></li>
-              <li><Link to="/feature5">Cloud Storage</Link></li>
-              <li><Link to="/feature6">Multi-User Access</Link></li>
-              <li><Link to="/feature7">Facial Recognition</Link></li>
-              <li><Link to="/feature8">Smart Monitoring Zones</Link></li>
-              <li><Link to="/feature9">Adaptive Learning</Link></li>
-              <li><Link to="/feature10">Smart Insights and Recommendations</Link></li>
+              <li><Link to="/surveillance">24/7 Surveillance</Link></li>
+              <li><Link to="/IntelligentIntrusionDetection">Intelligent Intrusion Detection</Link></li>
+              <li><Link to="/NightVision">Night Vision</Link></li>
+              <li><Link to="/SmartHomeIntegration">Smart Home Integration</Link></li>
+              <li><Link to="/CloudStorage">Cloud Storage</Link></li>
+              <li><Link to="/MultiUserAccess">Multi-User Access</Link></li>
+              <li><Link to="/FacialRecognition">Facial Recognition</Link></li>
+              <li><Link to="/SmartMonitoringZones">Smart Monitoring Zones</Link></li>
+              <li><Link to="/AdaptiveLearning">Adaptive Learning</Link></li>
+              <li><Link to="/SmartInsightsAndRecommendations">Smart Insights and Recommendations</Link></li>
               {/* Add other features here */}
             </ul>
           </section>
