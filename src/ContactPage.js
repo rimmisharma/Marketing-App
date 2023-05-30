@@ -5,7 +5,7 @@ import './App.css'; // Import the CSS file
 
 const ContactPage = () => {
  return (
-<div>
+<div className="contact-form">
 <h2>Contact Us</h2>
 <form>
 <input type="text" name="name" placeholder="Your Name" required />

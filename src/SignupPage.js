@@ -4,7 +4,7 @@ import './App.css'; // Import the App.css file
 
 const SignupPage = () => {
   return (
-    <div className="signup-container"> {/* Apply the 'signup-container' class */}
+    <div className="signup-form"> {/* Apply the 'signup-container' class */}
       <h2>Sign Up / Sign In</h2>
       {/* Add your signup and signin forms here */}
       <form>
