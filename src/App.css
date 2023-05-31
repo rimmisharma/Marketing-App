@@ -481,3 +481,49 @@ a:hover {
   display: block;
 }
 
+/*about page*/
+
+.about-page {
+  text-align: center;
+}
+
+.about-page h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about-page p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.about-page button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.effect {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.effect p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+
+
