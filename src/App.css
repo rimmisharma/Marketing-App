@@ -199,60 +199,285 @@ nav ul li:last-child {
   margin-top: 30px;
 }
 
-/* Contact Page Styles */
+/* ContactPage.css */
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Updated */
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
 .contact-form {
-  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem; /* Added */
 }
 
 .contact-form input,
 .contact-form textarea {
-  margin-bottom: 10px;
-  padding: 6px 10px;
   width: 100%;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.contact-form textarea {
+  height: 150px;
 }
 
 .contact-form button {
-  padding: 8px 12px;
-  background-color: #ff9800;
-  color: #fff;
+  padding: 0.5rem 2rem;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
+  background-color: #2196f3;
+  color: #fff;
   cursor: pointer;
 }
 
 .contact-form button:hover {
-  background-color: #e65100;
+  background-color: #0d8ed1;
 }
 
-/* Signup Page Styles */
-.signup-form {
-  margin-top: 30px;
+.contact-form h2 {
+  margin-bottom: 1rem;
 }
 
-.signup-form input {
+
+/* Registration Page and sign in page Styles */
+.registration-container,
+.signin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Updated */
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.registration-form,
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem; /* Added */
+}
+
+input {
+  padding: 0.5rem;
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*register link*/
+.register-link {
+  margin-top: 10px;
+}
+
+.register-link p {
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+/* welcome page */
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.welcome-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.welcome-description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.features-section {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.features-section h3 {
+  font-size: 1.5rem;
   margin-bottom: 10px;
-  padding: 6px 10px;
-  width: 100%;
-  border-radius: 4px;
-  border: 1px solid #ccc;
 }
 
-.signup-form button {
-  padding: 8px 12px;
-  background-color: #ff9800;
+.features-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.cta-section {
+  margin-bottom: 30px;
+}
+
+.cta-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #1976d2;
+}
+
+.login-section {
+  margin-bottom: 30px;
+}
+
+.login-link {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.current-time, .user-location, .window-size {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.current-time button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #2196f3;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.signup-form button:hover {
-  background-color: #e65100;
+.current-time button:hover {
+  background-color: #1976d2;
 }
+
+@media (max-width: 600px) {
+  .welcome-container h2 {
+    font-size: 2rem;
+  }
+
+  .welcome-description {
+    font-size: 1rem;
+  }
+
+  .features-section h3 {
+    font-size: 1.3rem;
+  }
+
+  .features-list {
+    font-size: 1rem;
+  }
+
+  .cta-section h3 {
+    font-size: 1.3rem;
+  }
+
+  .cta-section p {
+    font-size: 1rem;
+  }
+
+  .current-time, .user-location, .window-size {
+    font-size: 1rem;
+  }
+
+  .current-time button {
+    font-size: 0.9rem;
+  }
+}
+
 
 /* Individual Feature Page Styles */
-.feature-content {
-  margin-top: 30px;
+.feature-page {
+  text-align: center;
+  padding: 20px;
 }
+
+.feature-page h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.feature-page p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.feature-image {
+  width: 300px; /* Adjust the width to your desired size */
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
